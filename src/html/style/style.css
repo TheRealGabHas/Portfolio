@@ -146,14 +146,26 @@ body {
     text-align: center;
 }
 
-@media screen and (max-width: 925px)  {
+@media screen and (max-width: 1450px) {
     #projects {
         display: grid;
+        grid-template-columns: repeat(3, .5fr);
         grid-row-gap: 15px;
     }
-
     .project {
-        margin-left: auto;
+        margin: 0 auto
+    }
+}
+
+@media screen and (max-width: 925px)  {
+    #projects {
+        grid-template-columns: repeat(2, .5fr);
+    }
+}
+
+@media screen and (max-width: 620px) {
+    #projects {
+        grid-template-columns: repeat(1, .5fr);
     }
 }
 
@@ -179,5 +191,4 @@ body {
     .project-link, .project-desc {
         font-size: 12pt;
     }
-
 }
