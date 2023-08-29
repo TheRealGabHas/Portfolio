@@ -4,6 +4,19 @@
     box-sizing: border-box;
 }
 
+*::selection {
+    background-color: transparent;
+    color: currentColor;
+}
+
+*:hover {
+    cursor: default;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
 :root {
     /*--bg-color: rgb(130, 239, 130);*/
     /*--bg-color: rgb(150, 232, 63);*/
@@ -59,9 +72,10 @@ body {
 }
 
 #projects {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, .5fr);
+    grid-row-gap: 15px;
     justify-content: center;
-    align-items: center;
 }
 
 .project {
@@ -166,6 +180,7 @@ body {
 @media screen and (max-width: 620px) {
     #projects {
         grid-template-columns: repeat(1, .5fr);
+        justify-content: center;
     }
 }
 
