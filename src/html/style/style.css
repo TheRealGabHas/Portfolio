@@ -160,8 +160,8 @@ body {
 }
 
 .st-title {
-    margin-left: 2%;
-    margin-top: 2%;
+    margin-left: 5%;
+    margin-top: 5%;
     font-family: var(--font);
     font-size: 20pt;
     font-weight: bold;
@@ -193,6 +193,26 @@ body {
 
 .st-subcontainer .flex-container {
     padding-bottom: 20px;
+}
+
+#contact-list {
+    display: grid;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-link {
+    text-decoration: none;
+    padding-left: 15px;
+    font-family: var(--font);
+    font-weight: bold;
+    font-size: 16pt;
 }
 
 #credits {
@@ -254,7 +274,7 @@ body {
         height: 175px;
     }
 
-    .project-link, .project-desc {
+    .project-link, .project-desc, .contact-link {
         font-size: 12pt;
     }
 }
