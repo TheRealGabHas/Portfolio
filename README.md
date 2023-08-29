@@ -7,5 +7,4 @@ This is my personal website. Information about my projects and skills can be fou
 - [x] Responsiveness
 - [x] Complete the "Skills and tools" section
 - [x] Complete the "Contact" section
-- [ ] Complete the "Credits" section
-
+- [x] Complete the "Credits" section

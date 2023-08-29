@@ -217,17 +217,58 @@ body {
 
 #credits {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(1, 0.5fr);
-    grid-column-gap: 0;
-    grid-row-gap: 10px;
+    justify-content: center;
+    padding-bottom: 20px;
 }
 
-#credits ul {
+.credits-btn {
+    width: 150px;
     margin: 0 auto;
+    font-size: 16pt;
+    font-weight: bold;
+    font-family: var(--font);
+    border-radius: 5px;
+    border: 2px solid var(--txt-color);
+    background-color: #2683d3;
+    color: white;
+}
+
+.credits-btn:hover {
+    cursor: pointer;
+    transform: translate(3%, -1%);
+    box-shadow: -6px 5px 12px -2px rgb(90, 248, 255);
+}
+
+#credits-dialog {
+    border: 5px solid var(--txt-color);
+    border-radius: 5px;
+}
+
+#credits-dialog, #credits-dialog ul {
+    margin: 0 auto;
+    justify-content: center;
+    z-index: 20;
+}
+
+#credits-dialog ul {
+    font-size: 16pt;
+    font-weight: bold;
+    font-family: var(--font);
     text-decoration: none;
     list-style-type: none;
     text-align: center;
+    margin: 10px;
+}
+
+#credits-dialog > #hide[class='credits-btn'] {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#show[class='credits-btn'] {
+    z-index: 10;
 }
 
 @media screen and (max-width: 1450px) {
