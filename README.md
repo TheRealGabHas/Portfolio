@@ -8,3 +8,4 @@ This is my personal website. Information about my projects and skills can be fou
 - [x] Complete the "Skills and tools" section
 - [x] Complete the "Contact" section
 - [x] Complete the "Credits" section
+- [ ] Make the credits look better
