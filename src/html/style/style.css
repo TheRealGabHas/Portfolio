@@ -176,7 +176,7 @@ body {
     border-radius: 15px;
 }
 
-.st-subcontainer {
+.st-sub-container {
     margin: 0 auto;
     background-color: rgba(69, 72, 69, .6);
     border: 5px solid var(--txt-color);
@@ -194,7 +194,7 @@ body {
     height: 80px;
 }
 
-.st-subcontainer .flex-container {
+.st-sub-container .flex-container {
     padding-bottom: 20px;
 }
 
