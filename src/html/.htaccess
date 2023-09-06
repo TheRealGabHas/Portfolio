@@ -1,7 +1,9 @@
+# URL Rewriting --------------------------
 RewriteEngine on
 RewriteCond %{REQUEST_FILENAME}.php -f
 RewriteRule ^/?([a-zA-Z0-9]+)$ $1.php [L]
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^/?([a-zA-Z0-9]+)$ $1.html [L]
 
+# Error Handling -------------------------
 ErrorDocument 404 /error.html
