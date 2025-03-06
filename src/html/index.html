@@ -16,50 +16,83 @@
     <meta property="og:description" content="Welcome to gabhas.fr">
 </head>
 <body>
-    <div id="main-part-container">
-        <img id="main-picture" src="assets/profile-picture.png" alt="Profile picture" title="By @Eupholie_ (x.com)">
-        <h1 id="main-title" class="title">Welcome to gabhas.fr</h1>
+    <div id="welcome-container">
+        <div id="welcome-img-container">
+            <img id="welcome-picture" src="assets/profile-picture.png" alt="Profile picture" title="By @Eupholie_ (x.com)">
+        </div>
+        <div id="welcome-text-container">
+            <a href="" class="typewrite" data-period="2000" >
+                <span class="wrap"></span>
+            </a>
+            <h1 id="welcome-title" class="title">Welcome to <span class="highlight">gabhas.fr</span></h1>
+            <h2 class="welcome-desc"></h2>
+            <h2 class="welcome-desc typewrite" data-period="2000" data-type='["Python, Front-end developer", "DevOps enthusiast", "Network nerd"]'>
+                I am a
+            </h2>
+        </div>
+        <a class="arrow-down" href="#project-container">
+            <div class="left"></div>
+            <div class="right"></div>
+        </a>
     </div>
-    <hr class="section-separator">
+
     <div id="project-container">
-        <h1 id="project-title" class="title">Projects</h1>
+        <h1 id="project-title" class="title center">Projects</h1>
         <div id="projects">
             <div class="project">
                 <img class="project-img" src="assets/blog.png" alt="Blog" title="Blog" width="240" height="240">
-                <hr class="section-separator">
-                <a href="https://blog.gabhas.fr/" class="project-link" target="_self">English Blog</a>
-                <a href="https://blog.gabhas.fr/fr/" class="project-link" target="_self">French Blog</a>
-                <p class="project-desc">My blog about programming and other stuff.</p>
+
+                <div class="project-info">
+                    <h2 class="project-title">Blog</h2>
+                    <p class="project-desc">My blog about programming and other stuff.</p>
+                    <a href="https://blog.gabhas.fr/" class="project-link" target="_self">English Blog</a>
+                    <a href="https://blog.gabhas.fr/fr/" class="project-link" target="_self">French Blog</a>
+                </div>
             </div>
+
             <div class="project">
                 <img class="project-img" src="assets/treasure-map.png" alt="NoiseMap" title="NoiseMap" width="240" height="240">
-                <hr class="section-separator">
-                <a href="https://github.com/TheRealGabHas/NoiseMap-Generator" class="project-link" target="_self">Perlin Noise</a>
-                <p class="project-desc">A software to generate Perlin Noise map.</p>
+
+                <div class="project-info">
+                    <p class="project-desc">A software to generate Perlin Noise map.</p>
+                    <a href="https://github.com/TheRealGabHas/NoiseMap-Generator" class="project-link" target="_self">Perlin Noise</a>
+                </div>
             </div>
+
             <div class="project">
                 <img class="project-img" src="assets/crystal-ball.png" alt="Crystal ball" title="Crystal Ball" width="240" height="240">
-                <hr class="section-separator">
-                <a href="https://zodiac.gabhas.fr:" class="project-link" target="_blank" referrerpolicy="no-referrer">Zodiac Trainer</a>
-                <p class="project-desc">A simple game to train recognizing zodiac symbols.</p>
+
+                <div class="project-info">
+                    <p class="project-desc">A simple game to train recognizing zodiac symbols.</p>
+                    <a href="https://zodiac.gabhas.fr:" class="project-link" target="_blank" referrerpolicy="no-referrer">Zodiac Trainer</a>
+                </div>
             </div>
+
             <div class="project">
                 <img class="project-img" src="assets/knowledge_book.png" alt="MC-Pedia" title="Mc-Pedia" width="160" height="160">
-                <hr class="section-separator">
-                <a href="https://mc-pedia.gabhas.fr/" class="project-link" target="_self">MC-Pedia</a>
-                <p class="project-desc">Small Minecraft wiki with some useful knowledge.</p>
+
+                <div class="project-info">
+                    <p class="project-desc">Small Minecraft wiki with some useful knowledge.</p>
+                    <a href="https://mc-pedia.gabhas.fr/" class="project-link" target="_self">MC-Pedia</a>
+                </div>
             </div>
+
             <div class="project">
                 <img class="project-img" src="assets/lotterybot.png" alt="LotteryBot" title="LotteryBot" width="240" height="240">
-                <hr class="section-separator">
-                <a href="#projects" class="project-link soon-btn" target="_self" title="This project is no longer maintained.">[END] LotteryBot</a>
-                <p class="project-desc">A Discord bot to gamble and spend time.</p>
+
+                <div class="project-info">
+                    <p class="project-desc">A Discord bot to gamble and spend time.</p>
+                    <a href="#projects" class="project-link soon-btn" target="_self" title="This project is no longer maintained.">[END] LotteryBot</a>
+                </div>
             </div>
+
             <div class="project">
                 <img class="project-img" src="assets/mistery.png" alt="Mistery" title="Mistery" width="240" height="240">
-                <hr class="section-separator">
-                <a href="#projects" class="project-link soon-btn" target="_self">Coming soon</a>
-                <p class="project-desc">Currently working on a Python game project.</p>
+
+                <div class="project-info">
+                    <p class="project-desc">Currently working on a Python game project.</p>
+                    <a href="#projects" class="project-link soon-btn" target="_self">Coming soon</a>
+                </div>
             </div>
         </div>
     </div>
@@ -128,5 +161,6 @@
         <button id="show" class="credits-btn">See credits</button>
     </div>
     <script type="text/javascript" src="app/app.js"></script>
+    <script type="text/javascript" src="app/typewriter.js"></script>
 </body>
 </html>
