@@ -48,9 +48,9 @@ html, body {
 #welcome-picture {
     border-radius: 5px;
 
-    box-shadow: 0px 0px 10px 1px rgba(106,224,102,0.75);
-    -webkit-box-shadow: 0px 0px 10px 1px rgba(106,224,102,0.75);
-    -moz-box-shadow: 0px 0px 10px 1px rgba(106,224,102,0.75);
+    box-shadow: 0 0 10px 1px rgba(106,224,102,0.75);
+    -webkit-box-shadow: 0 0 10px 1px rgba(106,224,102,0.75);
+    -moz-box-shadow: 0 0 10px 1px rgba(106,224,102,0.75);
 }
 
 @keyframes zoom {
@@ -127,14 +127,19 @@ html, body {
 }
 
 #projects div {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .project {
-    border: 1px solid red;
+    width: fit-content;
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
+    border: 1px solid red;
 }
 
 .project-img {
@@ -148,11 +153,48 @@ html, body {
 .project-link-container {
     height: 60%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     align-items: end;
 }
 
 .project-link {
-    padding: 2px;
+    height: 48px;
+    padding: 2px 16px;
     border: 1px solid black;
+    border-radius: 5px;
+
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+
+    display: inline-flex;
+    align-items: center;
+
+    color: var(--main-clr);
+    box-shadow:
+            rgba(45, 35, 66, 0.4) 0 4px 8px,
+            rgba(45, 35, 66, 0.3) 0 7px 13px -3px,
+            #D6D6E7 0 -3px 0 inset;
+
+    cursor: pointer;
+    line-height: 1;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+}
+
+.project-link:hover {
+    box-shadow:
+            var(--second-clr) 0 2px 4px,
+            var(--third-clr) 0 7px 13px -3px,
+            var(--third-clr) 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.project-link:active {
+    box-shadow: var(--third-clr) 0 3px 7px inset;
+    transform: translateY(2px);
 }
