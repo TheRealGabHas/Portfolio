@@ -139,7 +139,8 @@ html, body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
-    border: 1px solid red;
+    border: 1px solid var(--main-clr);
+    border-radius: 5px;
 }
 
 .project-img {
@@ -151,7 +152,6 @@ html, body {
 }
 
 .project-link-container {
-    height: 60%;
     display: flex;
     justify-content: space-evenly;
     align-items: end;
