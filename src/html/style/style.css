@@ -45,6 +45,23 @@ html, body {
     align-items: center;
 }
 
+#welcome-picture {
+    border-radius: 5px;
+
+    box-shadow: 0px 0px 10px 1px rgba(106,224,102,0.75);
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(106,224,102,0.75);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(106,224,102,0.75);
+}
+
+@keyframes zoom {
+    from { transform: scale(1); }
+    to { transform: scale(1.05); }
+}
+
+#welcome-picture:hover {
+    animation: zoom 1s forwards;
+}
+
 #welcome-text-container {
     width: 100%;
     padding-left: 15%;
@@ -109,6 +126,11 @@ html, body {
     margin: 0 auto;
 }
 
+#projects div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .project {
     border: 1px solid red;
     display: grid;
@@ -123,6 +145,14 @@ html, body {
     font-size: 1.4rem;
 }
 
+.project-link-container {
+    height: 60%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+}
+
 .project-link {
-    bottom: 0;
+    padding: 2px;
+    border: 1px solid black;
 }
