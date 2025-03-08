@@ -31,6 +31,27 @@ html, body {
     text-align: center;
 }
 
+/* Error page */
+
+.error-container {
+    display: grid;
+    grid-row-gap: 5px;
+    justify-content: center;
+    text-align: center;
+}
+
+.error-container .section-separator {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.error-container .project-link {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+/* Error page */
+
 /* Welcome view */
 #welcome-container {
     height: 100vh;
