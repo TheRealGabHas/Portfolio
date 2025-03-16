@@ -1,8 +1,16 @@
 let dialog = document.getElementById('credits-dialog');
+let showBtn = document.getElementById('show');
+let isShown = false;
+
 document.getElementById('show').onclick = () => {
-    dialog.show();
+    if (isShown) {
+        dialog.close();
+        showBtn.innerHTML = 'See credits';
+        isShown = false;
+    } else {
+        dialog.show();
+        showBtn.innerHTML = 'Close credits';
+        isShown = true;
+    }
     window.scrollTo(0, document.body.scrollHeight);
-};
-document.getElementById('hide').onclick = () => {
-    dialog.close();
 };
