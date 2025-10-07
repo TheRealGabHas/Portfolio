@@ -76,7 +76,7 @@ html, body {
 
 @keyframes zoom {
     from { transform: scale(1); }
-    to { transform: scale(1.05); }
+    to { transform: scale(1.03); }
 }
 
 #welcome-picture:hover {
@@ -139,12 +139,12 @@ html, body {
 /* Scroll down arrow */
 
 #project-container {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
 }
 
 #projects {
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
 }
 
 #projects div {
@@ -277,7 +277,6 @@ html, body {
     box-shadow: 0 0 10px 1px rgba(106,224,102,0.75);
     -webkit-box-shadow: 0 0 10px 1px rgba(106,224,102,0.75);
     -moz-box-shadow: 0 0 10px 1px rgba(106,224,102,0.75);
-
 }
 
 #credits-dialog ul {
@@ -297,12 +296,16 @@ html, body {
 
 /* Media queries */
 @media screen and (max-width: 1050px) {
-    #projects {
+    #project-container {
         width: 90%;
     }
 }
 
 @media screen and (max-width: 880px) {
+    .title {
+        font-size: 2.5rem;
+    }
+
     .project {
         width: 95%;
         grid-template-columns: 1fr;
@@ -311,12 +314,20 @@ html, body {
 }
 
 @media screen and (max-width: 450px) {
+    #welcome-container {
+        height: 80%;
+    }
+
     #welcome-picture, .project-img {
         width: 80%;
     }
 
     .title {
-        font-size: 2.5rem;
+        font-size: 2rem;
+    }
+
+    .project-title {
+        font-size: 1.5em;
     }
 
     .project-link-container {
